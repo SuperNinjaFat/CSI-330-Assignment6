@@ -4,14 +4,6 @@ import operator
 import numbers
 import pandas as pd
 
-#Functions
-    #Information Gain
-    #Entropy
-
-#Classes
-    #(2 Children per Node)
-    #Decision Node
-
 
 class Question:
     def __init__(self, column, value):
@@ -51,6 +43,24 @@ class DNode:
 def is_numeric(value):
     return isinstance(value, int)
 
+def info_gain(questions):
+    pass
+
+def entropy(col):
+    vals = {}
+    
+    for i in col:
+        try:
+            vals[i] += 1
+        except KeyError:
+            vals[i] = 1
+
+    for i in vals.keys():
+        entropy 
+            
+    entropy = 0
+    
+    return entropy
 
 if __name__ == "__main__":
     training_data = [
